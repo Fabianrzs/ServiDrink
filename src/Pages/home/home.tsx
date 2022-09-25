@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <h1>My first Component</h1>
-      <Icon icon={'home'} size={100} />
+      <Icon icon={'bitbucket'} size={100} />
     </>
   )
 }
