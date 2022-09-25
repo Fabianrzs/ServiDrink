@@ -2,10 +2,10 @@ import React, { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Route, Routes as Switch } from 'react-router-dom'
 import Loading from '../components/common/Loading'
 
-export const Home = lazy(() => import('../Pages/home/home'))
-export const Login = lazy(() => import('../Pages/login/Login'))
-export const SingUp = lazy(() => import('../Pages/signUp/SignUp'))
-export const Profile = lazy(() => import('../Pages/profile/Profile'))
+export const Home = lazy(() => import('../pages/home/home'))
+export const Login = lazy(() => import('../pages/login/Login'))
+export const SingUp = lazy(() => import('../pages/signUp/SignUp'))
+export const Profile = lazy(() => import('../pages/profile/Profile'))
 
 export default function Routes() {
   return (
