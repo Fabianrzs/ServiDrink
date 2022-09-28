@@ -6,6 +6,7 @@ export const Home = lazy(() => import('../pages/home/home'))
 export const Login = lazy(() => import('../pages/login/Login'))
 export const SingUp = lazy(() => import('../pages/signUp/SignUp'))
 export const Profile = lazy(() => import('../pages/profile/Profile'))
+export const PerfilUsuario = lazy(() => import('../pages/profile/Profile'))
 
 export default function Routes() {
   return (
@@ -29,6 +30,10 @@ export default function Routes() {
           <Route
             path='/profile'
             element={<Profile />}
+          />
+          <Route
+            path='/pp'
+            element={<PerfilUsuario />}
           />
         </Switch>
       </Router>
