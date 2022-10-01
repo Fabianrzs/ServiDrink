@@ -1,9 +1,9 @@
 import React from 'react'
 import Container from '../../components/common/container'
-export default function Home() {
+export default function Usuarios() {
   return (
     <Container>
-      Welcome
+      Usuarios
     </Container>
   )
 }

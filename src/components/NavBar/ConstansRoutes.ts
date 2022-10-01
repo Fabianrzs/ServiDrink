@@ -2,31 +2,31 @@ export const NavItems = [
   {
     title: 'Home',
     icon: 'home',
-    route: ''
+    route: '/'
   },
   {
     title: 'Inventario',
     icon: 'stats-dots',
-    route: ''
+    route: '/inventario'
   },
   {
     title: 'Pedidos',
     icon: 'airplane',
-    route: ''
+    route: '/pedidos'
   },
   {
     title: 'Historial',
     icon: 'file-text2',
-    route: ''
+    route: '/historial'
   },
   {
     title: 'Usuarios',
     icon: 'users',
-    route: ''
+    route: '/usuarios'
   },
   {
     title: 'Configuracion',
     icon: 'equalizer2',
-    route: ''
+    route: '/configuracion'
   }
 ]

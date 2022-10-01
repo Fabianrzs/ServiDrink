@@ -12,7 +12,7 @@ export default function NavBar() {
           <ProfileIcon />
           {
             NavItems.map((idex, index) => <NavItem key={index} icon={idex.icon}
-              route={idex.route} title={idex.title}/>)
+              route={idex.route} title={idex.title} />)
           }
         </div>
       </div>

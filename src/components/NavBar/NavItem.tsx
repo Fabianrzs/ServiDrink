@@ -2,10 +2,10 @@ import React from 'react'
 import Icon from '../common/icon'
 import '../../styles/components/NavBar/NavBar.scss'
 
-type NavItemProps={
-    title: string,
-    icon: string,
-    route: string
+type NavItemProps = {
+  title: string,
+  icon: string,
+  route: string
 }
 
 export default function NavItem(props: NavItemProps) {
@@ -13,7 +13,7 @@ export default function NavItem(props: NavItemProps) {
   return (
     <ul className="w-100 p-0 m-0">
       <li>
-        <a>
+        <a href={props.route}>
           <div className="row">
             <div className="col-4">
               <Icon icon={icon} size={20} />
