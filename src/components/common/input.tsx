@@ -5,6 +5,9 @@ interface InputProps {
   id: string
   name: string
   defaultValue: string
+  label : string
+
+
 }
 
 export default function Input(props: InputProps) {
