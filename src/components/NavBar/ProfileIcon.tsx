@@ -6,9 +6,8 @@ export default function ProfileIcon() {
   return (
     <>
       <div className="profile">
-        <Icon icon={ 'favicon' } size={100} color ={'white'} />
-        <h3>ServiDrink</h3>
-        <p></p>
+        <Icon icon={ 'servidrinklogo' } size={200} color ={'white'}/>
+
       </div>
     </>
   )

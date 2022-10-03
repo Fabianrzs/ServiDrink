@@ -11,7 +11,7 @@ export const NavItems = [
   },
   {
     title: 'Pedidos',
-    icon: 'airplane',
+    icon: 'truck',
     route: '/pedidos'
   },
   {
