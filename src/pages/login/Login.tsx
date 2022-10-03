@@ -16,7 +16,7 @@ export default function Login() {
             <label htmlFor="floatingPassword">Password</label>
           </div>
           <div className="text-center">
-            <a href="/"><button type="button" className="btn btn-outline-dark">LOGIN</button></a>
+            <a href="/home"><button type="button" className="btn btn-outline-dark">LOGIN</button></a>
           </div>
         </div>
       </div>

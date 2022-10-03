@@ -15,7 +15,7 @@ body{
     background: rgb(5, 68, 104);
     position: fixed;
     top: 0;
-    left: 0;
+    left: auto;
     width: 225px;
     height: 100%;
     padding: 20px 0;
@@ -24,7 +24,7 @@ body{
 
 .wrapper .sidebar .profile{
     margin-bottom: 30px;
-    text-align: center;
+
 }
 
 .wrapper .sidebar .profile img{

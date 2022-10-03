@@ -2,7 +2,7 @@ export const NavItems = [
   {
     title: 'Home',
     icon: 'home',
-    route: '/'
+    route: '/home'
   },
   {
     title: 'Inventario',
@@ -11,7 +11,7 @@ export const NavItems = [
   },
   {
     title: 'Pedidos',
-    icon: 'airplane',
+    icon: 'truck',
     route: '/pedidos'
   },
   {

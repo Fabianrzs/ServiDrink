@@ -18,11 +18,11 @@ export default function Routes() {
       <Router>
         <Switch>
           <Route
-            path='/'
+            path='/home'
             element={<Home />}
           />
           <Route
-            path='/login'
+            path='/'
             // {user.isLoggedIn ? <Redirect to="/" /> : <Login />}
             element={<Login />}
           />
