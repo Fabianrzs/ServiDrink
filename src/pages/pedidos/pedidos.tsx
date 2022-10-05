@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from '../../components/common/container'
 import '../../styles/components/Container.scss'
+import Select from '../../components/common/select'
 
 export default function Pedidos() {
   return (
@@ -10,48 +11,46 @@ export default function Pedidos() {
           <header className="text-center mb-4"><span>PEDIDOS</span></header>
           <div className="row row justify-content-evenly">
             <div className="col-5  text-center">
-              <div className="form-floating mb-3">
-                <label htmlFor="inputEmail4" className="form-label">Email</label>
-                <input type="email" className="form-control" id="inputEmail4"/>
+              <div className="col-5">
+                <Select id={'01'} name={'presentacion'} defaultValue={'00'} label={'ml'} options={[{ id: '01', value: '01', text: '250 Ml' },
+                  { id: '02', value: '02', text: '300 Ml' }]}/>
+              </div>
+            </div>
+            <div className="col-5  text-center">
+              <div className=" input-group  mb-3">
+                <span className="input-group-text" id="inputGroup-sizing-default">CANTIDAD</span>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="DIGITE CANTIDAD... "/>
+              </div>
+            </div>
+            <div className="col-5  text-center">
+              <div className=" input-group  mb-3">
+                <span className="input-group-text" id="inputGroup-sizing-default">TIENDA</span>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
               </div>
             </div>
             <div className="col-5 text-center">
-              <div className="form-floating mb-3">
-                <label htmlFor="inputPassword4" className="form-label">Password</label>
-                <input type="password" className="form-control" id="inputPassword4"/>
+              <div className=" input-group  mb-3">
+                <span className="input-group-text" id="inputGroup-sizing-default">BARRIO</span>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
               </div>
             </div>
-            <div className="col-5">
-              <div className="form-floating mb-3">
-                <label htmlFor="inputAddress" className="form-label">Address</label>
-                <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St"/>
+            <div className="col-5 text-center">
+              <div className=" input-group  mb-3">
+                <span className="input-group-text" id="inputGroup-sizing-default">CALLE</span>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Calle 00 #00-00 "/>
               </div>
             </div>
-            <div className="col-5">
-              <div className="form-floating mb-3">
-                <label htmlFor="inputAddress2" className="form-label">Address 2</label>
-                <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"/>
+            <div className="col-5 text-center">
+              <div className=" input-group  mb-3">
+                <span className="input-group-text" id="inputGroup-sizing-default">TELEFONO</span>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="+57 (324...) "/>
               </div>
-            </div>
-            <div className="col-md-6">
-              <label htmlFor="inputCity" className="form-label">City</label>
-              <input type="text" className="form-control" id="inputCity"/>
-            </div>
-            <div className ="col-md-5">
-              <label htmlFor="inputState" className="form-label">State</label>
-              <select id="inputState" className="form-select">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
             </div>
           </div>
-          <div className="col-3">
-            <label htmlFor="inputZip" className="form-label">Zip</label>
-            <input type="text" className="form-control" id="inputZip"/>
+          <div className="text-center">
+            <button type="button" className="btn btn-outline-dark">CONFIRMAR
+            </button>
           </div>
-        </div>
-        <div className="col-md-1">
-          <button type="submit" className="btn btn-primary">PEDIR</button>
         </div>
       </div>
 
