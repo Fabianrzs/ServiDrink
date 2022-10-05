@@ -1,13 +1,12 @@
 import React from 'react'
-import '../../styles/components/NavBar/NavBar.scss'
 import Container from '../../components/common/container'
-import '../../styles/components/Container.scss'
 import Select from '../../components/common/select'
+import '../../styles/components/Container.scss'
 
 export default function Registro() {
   return (
     <Container id="Container">
-      <div className="d-flex vh-90 justify-content-center align-items-center">
+      <div className="d-flex vh-100 justify-content-center align-items-center">
         <div className="col-7 border border-dark p-5 pt-3 ">
           <header className="text-center mb-4"><span>REGISTRO</span></header>
           <div className="row">

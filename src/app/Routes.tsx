@@ -6,7 +6,6 @@ export const Home = lazy(() => import('../pages/home/home'))
 export const Login = lazy(() => import('../pages/login/Login'))
 export const SingUp = lazy(() => import('../pages/signUp/SignUp'))
 export const Profile = lazy(() => import('../pages/profile/Profile'))
-export const Configuracion = lazy(() => import('../pages/configuracion/configuracion'))
 export const Historial = lazy(() => import('../pages/historial/historial'))
 export const Inventario = lazy(() => import('../pages/inventario/inventario'))
 export const Pedidos = lazy(() => import('../pages/pedidos/pedidos'))
@@ -57,10 +56,6 @@ export default function Routes() {
           <Route
             path='/historial'
             element={<Historial />}
-          />
-          <Route
-            path='/configuracion'
-            element={<Configuracion />}
           />
         </Switch>
       </Router>
