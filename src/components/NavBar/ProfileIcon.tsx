@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Icon from '../common/icon'
 
 export default function ProfileIcon() {

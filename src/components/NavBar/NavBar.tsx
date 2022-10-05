@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../styles/components/NavBar/NavBar.scss'
 import ProfileIcon from './ProfileIcon'
 import NavItem from './NavItem'
 import { NavItems } from './ConstansRoutes'

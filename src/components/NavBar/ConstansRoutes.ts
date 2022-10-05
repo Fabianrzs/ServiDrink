@@ -5,6 +5,11 @@ export const NavItems = [
     route: '/home'
   },
   {
+    title: 'Registro',
+    icon: 'file-text2',
+    route: '/registro'
+  },
+  {
     title: 'Inventario',
     icon: 'stats-dots',
     route: '/inventario'

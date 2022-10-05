@@ -11,6 +11,7 @@ export const Historial = lazy(() => import('../pages/historial/historial'))
 export const Inventario = lazy(() => import('../pages/inventario/inventario'))
 export const Pedidos = lazy(() => import('../pages/pedidos/pedidos'))
 export const Usuarios = lazy(() => import('../pages/usuarios/usuarios'))
+export const Registro = lazy(() => import('../pages/registro/registro'))
 
 export default function Routes() {
   return (
@@ -20,6 +21,10 @@ export default function Routes() {
           <Route
             path='/home'
             element={<Home />}
+          />
+          <Route
+            path='/registro'
+            element={<Registro/>}
           />
           <Route
             path='/'

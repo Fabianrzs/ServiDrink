@@ -12,22 +12,23 @@ interface selectProps {
 }
 
 export default function Select(props: selectProps) {
-  const { id, name, defaultValue, label, options } = props
+  const { id, name, options } = props
   const optionsHtml = options.map((option, key) => {
-      return (
-        <option key={key} value={option.value} >{option.text}</option>
-      )
-    }
-  );
+    return (
+      <option key={key} value={option.value} >{option.text}</option>
+    )
+  }
+  )
+
   return (<>
-      <label htmlFor="select">titulo:</label>
+    <label htmlFor="select">titulo:</label>
 
-      <select name={name} id={id}>
-        <option value="">--SELECT OPTION--</option>
-        {optionsHtml}
-      </select>
+    <select name={name} id={id}>
+      <option value="">--SELECT OPTION--</option>
+      {optionsHtml}
+    </select>
 
-    </>
+  </>
 
   )
 }

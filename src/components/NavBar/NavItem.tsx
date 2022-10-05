@@ -1,6 +1,6 @@
 import React from 'react'
 import Icon from '../common/icon'
-
+import '../../styles/components/NavBar/NavBar.scss'
 type NavItemProps = {
   title: string,
   icon: string,
@@ -26,5 +26,6 @@ export default function NavItem(props: NavItemProps) {
         </li>
       </ul>
     </>
+
   )
 }
