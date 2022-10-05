@@ -9,7 +9,7 @@ export default function Registro() {
       <div className="d-flex vh-100 justify-content-center align-items-center">
         <div className="col-7 border border-dark p-5 pt-3 ">
           <header className="text-center mb-4"><span>REGISTRO</span></header>
-          <div className="row">
+          <div className="row row justify-content-evenly">
             <div className="col-5  text-center">
               <div className="form-floating mb-3">
                 <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
@@ -39,7 +39,7 @@ export default function Registro() {
                 { id: '02', value: '02', text: '02' }]}/>
             </div>
             <div className="col-5">
-              <Select id={'01'} name={'presentacio'} defaultValue={'00'} label={'ml'} options={[{ id: '01', value: '01', text: '250 Ml' },
+              <Select id={'01'} name={'presentacion'} defaultValue={'00'} label={'ml'} options={[{ id: '01', value: '01', text: '250 Ml' },
                 { id: '02', value: '02', text: '300 Ml' }]}/>
             </div>
           </div>
