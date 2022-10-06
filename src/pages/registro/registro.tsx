@@ -9,7 +9,7 @@ export default function Registro() {
       <div className="d-flex vh-100 justify-content-center align-items-center">
         <div className="col-7 border border-dark p-5 pt-3 ">
           <header className="text-center mb-4"><span>REGISTRO</span></header>
-          <div className="row justify-content-evenly">
+          <div className="row row justify-content-evenly justify-content-evenly">
             <div className="col-5 ">
               <div className=" input-group  mb-3">
                 <span className="input-group-text" id="inputGroup-sizing-default">MARCA</span>
@@ -62,7 +62,7 @@ export default function Registro() {
                 { id: '02', value: '02', text: '02' }]}/>
             </div>
             <div className="col-5  mb-3">
-              <Select id={'01'} name={'PRESENTACION: '} defaultValue={'00'} label={'ml'} options={[{ id: '01', value: '01', text: '250 Ml' },
+              <Select id={'01'} name={'PRESENTACION: n'} defaultValue={'00'} label={'ml'} options={[{ id: '01', value: '01', text: '250 Ml' },
                 { id: '02', value: '02', text: '300 Ml' }]}/>
             </div>
           </div>
