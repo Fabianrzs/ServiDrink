@@ -21,8 +21,7 @@ export default function Select(props: selectProps) {
   )
 
   return (<>
-    <label htmlFor="select">titulo:</label>
-
+    <label htmlFor="select">{name}</label>
     <select name={name} id={id}>
       <option value="">--SELECT OPTION--</option>
       {optionsHtml}
