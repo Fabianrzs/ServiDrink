@@ -10,19 +10,21 @@ export default function NavBar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a className="navbar-brand text-white" href="/home"><Icon icon={'home'} size={40} /></a>
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-5 mb-lg-0">
               <li className="nav-item gy-5">
-                <a className="nav-link active text-white" aria-current="page" href="/registro"><Icon icon={'file-text2'} size={40} /></a>
+                <a className="nav-link active text-white" aria-current="page" href="/home"><Icon icon={'home'} size={40} /></a>
+              </li>
+              <li className="nav-item gy-5">
+                <a className="nav-link active text-white" aria-current="page" href="/registro"><Icon icon={'file-text1'} size={40} /></a>
               </li>
               <li className="nav-item me-auto mb-2 mb-lg-0">
                 <a className="nav-link active text-white" aria-current="page" href="/inventario"><Icon icon={'stats-dots'} size={40} /></a>
               </li>
               <li className="nav-item me-auto mb-2 mb-lg-0">
-                <a className="nav-link active text-white" aria-current="page" href="/pedidos"><Icon icon={'truck'} size={40} /></a>
+                <a className="nav-link active text-white" aria-current="page" href="/pedidos"><Icon icon={'camion-de-reparto-_1'} size={50} /></a>
               </li>
               <li className="nav-item me-auto mb-2 mb-lg-0">
-                <a className="nav-link active text-white" aria-current="page" href="/usuarios"><Icon icon={'users'} size={40} /></a>
+                <a className="nav-link active text-white" aria-current="page" href="/usuarios"><Icon icon={'user-tie'} size={40} /></a>
               </li>
             </ul>
             <form className="d-flex">

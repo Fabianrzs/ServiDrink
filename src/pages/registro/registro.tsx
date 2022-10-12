@@ -23,7 +23,7 @@ export default function Registro() {
               </div>
             </div>
             <div className="col-10">
-              <div className="form-floating mb-3">
+              <div className="form-floating mb-3 ">
                 <input className="form-control" type="file" id="formFile"/>
               </div>
             </div>
@@ -39,30 +39,24 @@ export default function Registro() {
                 <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
               </div>
             </div>
-            <div className="col-5 mb-3">
-              <div className="form-floating mb-3">
-                <div className="input-group mb-3">
-                  <span className="input-group-text">$</span>
-                  <span className="input-group-text">x1</span>
-                  <input type="text" className="form-control" aria-label="Dollar amount (with dot and two decimal places)"/>
-                </div>
+            <div className="col-5 ">
+              <div className="input-group mb-3">
+                <span className="input-group-text" id="inputGroup-sizing-default">PRECIO UNIDAD</span>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
               </div>
             </div>
-            <div className="col-5">
-              <div className="form-floating mb-3">
-                <div className="input-group mb-3">
-                  <span className="input-group-text">$</span>
-                  <span className="input-group-text">x</span>
-                  <input type="text" className="form-control" aria-label="Dollar amount (with dot and two decimal places)"/>
-                </div>
+            <div className="col-5 ">
+              <div className="input-group mb-3">
+                <span className="input-group-text" id="inputGroup-sizing-default">PRECIO PACK</span>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
               </div>
             </div>
             <div className="col-5 mb-3">
-              <Select id={'01'} name={'UNIDAD: '} defaultValue={'00'} label={'x'} options={[{ id: '01', value: '01', text: '01' },
+              <Select id={'01'} defaultValue={'00'} label={'UNIDADES'} options={[{ id: '01', value: '01', text: '01' },
                 { id: '02', value: '02', text: '02' }]}/>
             </div>
             <div className="col-5  mb-3">
-              <Select id={'01'} name={'PRESENTACION: n'} defaultValue={'00'} label={'ml'} options={[{ id: '01', value: '01', text: '250 Ml' },
+              <Select id={'01'} defaultValue={'00'} label={'PRESENTACION'} options={[{ id: '01', value: '01', text: '250 Ml' },
                 { id: '02', value: '02', text: '300 Ml' }]}/>
             </div>
           </div>

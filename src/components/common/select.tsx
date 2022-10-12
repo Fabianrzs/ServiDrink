@@ -2,7 +2,6 @@ import React from 'react'
 
 interface selectProps {
   id: string
-  name: string
   defaultValue: string
   label : string
   options: {id:string,
@@ -12,7 +11,7 @@ interface selectProps {
 }
 
 export default function Select(props: selectProps) {
-  const { id, name, options } = props
+  const { id, defaultValue, label, options } = props
   const optionsHtml = options.map((option, key) => {
     return (
       <option key={key} value={option.value} >{option.text}</option>
@@ -21,9 +20,9 @@ export default function Select(props: selectProps) {
   )
 
   return (<>
-    <label htmlFor="select">{name}</label>
-    <select name={name} id={id}>
-      <option value="">--SELECT OPTION--</option>
+    <label htmlFor="select"></label>
+    <select className="form-select" id={id} defaultValue={defaultValue}>
+      <option label={label}></option>
       {optionsHtml}
     </select>
 

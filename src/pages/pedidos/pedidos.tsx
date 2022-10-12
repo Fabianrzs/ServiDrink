@@ -9,10 +9,10 @@ export default function Pedidos() {
       <div className="d-flex vh-100 justify-content-center align-items-center">
         <div className="col-7 border border-dark p-5 pt-3 ">
           <header className="text-center mb-4"><span>PEDIDOS</span></header>
-          <div className="row row justify-content-evenly">
-            <div className="col-5  text-center">
-              <div className="col-5">
-                <Select id={'01'} name={'presentacion'} defaultValue={'00'} label={'ml'} options={[{ id: '01', value: '01', text: '250 Ml' },
+          <div className="row row justify-content-evenly justify-content-evenly">
+            <div className="col-5">
+              <div className="input-group  mb-3">
+                <Select id={'01'} defaultValue={'0'} label={'PRESENTACION'} options={[{ id: '01', value: '01', text: '250 Ml' },
                   { id: '02', value: '02', text: '300 Ml' }]}/>
               </div>
             </div>
