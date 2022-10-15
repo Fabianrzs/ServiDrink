@@ -1,6 +1,6 @@
 import React from 'react'
 import Icon from '../common/icon'
-import '../../styles/components/NavBar/NavBar.scss'
+import '../../styles/NavBar/NavBar.scss'
 type NavItemProps = {
   title: string,
   icon: string,
@@ -8,24 +8,21 @@ type NavItemProps = {
 }
 
 export default function NavItem(props: NavItemProps) {
-  const { title, icon } = props
+  const { title, icon, route } = props
   return (
     <>
-      <ul className="w-100 p-0 m-0">
-        <li>
-          <a href={props.route}>
-            <div className="row">
-              <div className="col-4">
-                <Icon icon={icon} size={20} />
-              </div>
-              <div className="col-4">
-                <span >{title}</span>
-              </div>
+      <li className="nav-item pb-1">
+        <a className="nav-link active" aria-current="page" href={route}>
+          <div className="row justify-content-evenly">
+            <div className="col-4">
+              {title}
             </div>
-          </a>
-        </li>
-      </ul>
+            <div className="col-4">
+              <Icon icon={icon} size={30} />
+            </div>
+          </div>
+        </a>
+      </li>
     </>
-
   )
 }
