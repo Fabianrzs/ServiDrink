@@ -21,7 +21,12 @@ export const NavItems = [
   },
   {
     title: 'USUARIOS',
-    icon: 'user-tie',
+    icon: 'users',
     route: '/usuarios'
+  },
+  {
+    title: 'Lista Pedios',
+    icon: 'paste',
+    route: '/listapedido'
   }
 ]

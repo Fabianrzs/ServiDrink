@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Route, Routes as Switch } from 'react-router-dom'
 import Loading from '../components/common/Loading'
 
+
 export const Home = lazy(() => import('../pages/home/home'))
 export const Login = lazy(() => import('../pages/login/Login'))
 export const SingUp = lazy(() => import('../pages/signUp/SignUp'))
@@ -11,6 +12,7 @@ export const Inventario = lazy(() => import('../pages/inventario/inventario'))
 export const Pedidos = lazy(() => import('../pages/pedidos/pedidos'))
 export const Usuarios = lazy(() => import('../pages/usuarios/usuarios'))
 export const Registro = lazy(() => import('../pages/registro/registro'))
+export const ListaPedido = lazy(() => import ('../pages/Lista Pedidos/ListaPedido'))
 
 export default function Routes() {
   return (
@@ -56,6 +58,10 @@ export default function Routes() {
           <Route
             path='/historial'
             element={<Historial />}
+          />
+          <Route
+            path='/listapedido'
+            element={<ListaPedido/>}
           />
         </Switch>
       </Router>

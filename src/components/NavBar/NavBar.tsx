@@ -2,6 +2,7 @@ import React from 'react'
 import Icon from '../common/icon'
 import NavItem from './NavItem'
 import { NavItems } from './ConstansRoutes'
+import '../../styles/NavBar/NavBar.scss'
 
 export default function NavBar() {
   return (
