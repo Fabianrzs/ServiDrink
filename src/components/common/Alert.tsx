@@ -12,8 +12,7 @@ export default function Alert(props: AlertProps) {
     const { color, message, time, setVisible } = props
 
     useEffect(() => {
-
-        let timeMin = time ? (time * 1000) : 2000
+        let timeMin = time ? (time*1000) : 2000
         setTimeout(() => { setVisible(false) }, timeMin)
     }, [])
 

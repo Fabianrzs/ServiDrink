@@ -28,10 +28,12 @@ export default function Pedidos() {
     if (form.tienda == undefined || form.tienda == "") {
       setMesaje("Llena el campo de tienda")
       setVisible(true);
+      setColor("danger");
       return false;
     } else if (form.barrio == undefined || form.barrio == "") {
       setMesaje("Llena el campo de barrio")
       setVisible(true);
+      setColor("danger");
       return false;
     }
     return true
@@ -59,11 +61,6 @@ export default function Pedidos() {
 
 
             {visible && <Alert color={color} message={mesaje} setVisible={setVisible} />}
-
-
-
-
-
 
             <div className="row row justify-content-evenly justify-content-evenly">
               <div className="col-xxl-5 col-sm-12 ">
