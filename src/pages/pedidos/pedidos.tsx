@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react'
 import Container from '../../components/common/container'
 import '../../styles/children/Container.scss'
 import Select from '../../components/common/select'
 import '../../styles/header/header.scss'
-import Alert from "../../components/common/Alert";
+import Alert from '../../components/common/Alert'
 
 export default function Pedidos() {
 
@@ -30,12 +30,39 @@ export default function Pedidos() {
       setVisible(true);
       setColor("danger");
       return false;
+
     } else if (form.barrio == undefined || form.barrio == "") {
       setMesaje("Llena el campo de barrio")
       setVisible(true);
       setColor("danger");
       return false;
+
+    }else if (form.calle == undefined || form.calle == "") {
+      setMesaje("Llena el campo de calle")
+      setVisible(true);
+      setColor("danger");
+      return false;
+
+    }else if (form.presentacion == undefined || form.presentacion == "") {
+      setMesaje("Seleccione una presentacion")
+      setVisible(true);
+      setColor("danger");
+      return false;
+
     }
+    else if (form.telefono == undefined || form.telefono == "") {
+      setMesaje("Llena el campo telefono")
+      setVisible(true);
+      setColor("danger");
+      return false;
+
+    } else if (form.cantidad == undefined || form.cantidad == "") {
+      setMesaje("Llena el campo cantidad")
+      setVisible(true);
+      setColor("danger");
+      return false;
+    }
+
     return true
   }
 
@@ -84,7 +111,7 @@ export default function Pedidos() {
               <div className="col-xxl-5 col-sm-12">
                 <div className=" input-group  mb-3">
                   <span className="input-group-text" id="inputGroup-sizing-default">TELEFONO</span>
-                  <input id={'telefono'} name={'tel'} onChange={(e) => handleInputChange(e)} type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="+57 (324...) " />
+                  <input id={'telefono'} name={'telefono'} onChange={(e) => handleInputChange(e)} type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="+57 (324...) " />
                 </div>
               </div>
               <div className="col-xxl-5 col-sm-12">
@@ -96,7 +123,7 @@ export default function Pedidos() {
               <div className="col-xxl-5 col-sm-12 ">
                 <div className=" input-group  mb-3">
                   <span className="input-group-text" id="inputGroup-sizing-default">CANTIDAD</span>
-                  <input id={'cantidad'} name={'canridad'} onChange={(e) => handleInputChange(e)} type="number" min="1" max="100" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="DIGITE CANTIDAD... " />
+                  <input id={'cantidad'} name={'cantidad'} onChange={(e) => handleInputChange(e)} type="number" min="1" max="100" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="DIGITE CANTIDAD... " />
                 </div>
               </div>
             </div>
