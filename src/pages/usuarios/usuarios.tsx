@@ -12,55 +12,55 @@ export default function Usuarios() {
             <div className="col-xxl-5 col-sm-12 ">
               <div className=" input-group  mb-3">
                 <span className="input-group-text" id="inputGroup-sizing-default">Primer Nombre</span>
-                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
               </div>
             </div>
             <div className="col-xxl-5 col-sm-12 ">
               <div className=" input-group  mb-3">
                 <span className="input-group-text" id="inputGroup-sizing-default">Segundo Nombre</span>
-                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
               </div>
             </div>
             <div className="col-xxl-5 col-sm-12 ">
               <div className=" input-group  mb-3">
                 <span className="input-group-text" id="inputGroup-sizing-default">Primer apellido</span>
-                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
               </div>
             </div>
             <div className="col-xxl-5 col-sm-12 ">
               <div className=" input-group  mb-3">
                 <span className="input-group-text" id="inputGroup-sizing-default">Segundo Apellido</span>
-                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
               </div>
             </div>
             <div className="col-xxl-5 col-sm-12 ">
               <div className=" input-group  mb-3">
                 <span className="input-group-text" id="inputGroup-sizing-default">ID Empleado</span>
-                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="1234..."/>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="1234..." />
               </div>
             </div>
             <div className="col-xxl-5 col-sm-12">
               <div className=" input-group  mb-3">
                 <span className="input-group-text" id="inputGroup-sizing-default">Telefono</span>
-                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="+57 (324...) "/>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="+57 (324...) " />
               </div>
             </div>
             <div className="col-xxl-5 col-sm-12">
               <div className=" input-group  mb-3">
                 <span className="input-group-text" id="inputGroup-sizing-default">Gmail</span>
-                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Example@gmail.com"/>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Example@gmail.com" />
               </div>
             </div>
             <div className="col-xxl-5 col-sm-12">
               <div className=" input-group  mb-3">
                 <span className="input-group-text" id="inputGroup-sizing-default">Password</span>
-                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="@#123%^&"/>
+                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="@#123%^&" />
               </div>
             </div>
             <div className="col-xxl-5 col-sm-12">
               <div className="input-group  mb-3">
-                <Select id={'01'} defaultValue={'0'} label={'Rol'} options={[{ id: '01', value: '01', text: 'Vendedor' },
-                  { id: '02', value: '02', text: 'Repartidor' }]}/>
+                <Select onChange={() => { }} id={'01'} defaultValue={'0'} label={'Rol'} options={[{ id: '01', value: '01', text: 'Vendedor' },
+                { id: '02', value: '02', text: 'Repartidor' }]} />
               </div>
             </div>
             <div className="text-center">

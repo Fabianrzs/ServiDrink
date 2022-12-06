@@ -52,11 +52,11 @@ export default function Registro() {
               </div>
             </div>
             <div className="col-xxl-5 col-md-12 mb-3">
-              <Select id={'01'} defaultValue={'00'} label={'UNIDADES'} options={[{ id: '01', value: '01', text: '01' },
+              <Select onChange={()=>{}} id={'01'} defaultValue={'00'} label={'UNIDADES'} options={[{ id: '01', value: '01', text: '01' },
                 { id: '02', value: '02', text: '02' }]}/>
             </div>
             <div className="col-xxl-5 col-md-12 mb-3">
-              <Select id={'01'} defaultValue={'00'} label={'PRESENTACION'} options={[{ id: '01', value: '01', text: '250 Ml' },
+              <Select onChange={() => { }} id={'01'} defaultValue={'00'} label={'PRESENTACION'} options={[{ id: '01', value: '01', text: '250 Ml' },
                 { id: '02', value: '02', text: '300 Ml' }]}/>
             </div>
           </div>
